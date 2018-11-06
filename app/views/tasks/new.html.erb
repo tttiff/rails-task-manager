@@ -1,0 +1,13 @@
+<%= form_for(@tasks) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.submit "Create New" %>
+<% end %>
+
+<%= link_to "All tasks", tasks_path%>
+
+
